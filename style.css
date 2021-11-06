@@ -1,0 +1,67 @@
+body {
+  background-color: #000000;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#centered-container {
+  display: grid;
+  width: 55%;
+  padding: 1%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+  background: #121212;
+}
+#centered-container #about {
+  margin: 1%;
+}
+#centered-container #about #picture {
+  float: left;
+  margin-right: 3%;
+  border: 2px solid #d84a54;
+}
+#centered-container #about #picture .frame, #centered-container #about #picture img {
+  width: 164px;
+  height: 164px;
+}
+#centered-container #about .name {
+  color: #ededed;
+}
+#centered-container #about .location {
+  color: #898989;
+}
+#centered-container #about .description {
+  color: #898989;
+}
+#centered-container #about .contact-btn {
+  float: right;
+}
+#centered-container #about .contact-btn button {
+  background: rgba(192, 192, 192, 0.4);
+  color: white;
+  border: none;
+  padding: 7px;
+}
+#centered-container #showcase {
+  margin: 2%;
+  width: 60%;
+}
+#centered-container #showcase .card {
+  color: #898989;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.2%;
+  padding-left: 5%;
+}
+#centered-container #showcase .card svg {
+  filter: invert(42%);
+}
+#centered-container #showcase .card a {
+  color: #ededed;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

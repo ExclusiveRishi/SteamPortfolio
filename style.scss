@@ -1,0 +1,85 @@
+$heading-Color: #ededed;
+$para-Color: #898989;
+$foreground: #111111;
+$background: radial-gradient( farthest-side at bottom right, var(--gradient-right), transparent 500px ), radial-gradient( farthest-corner at bottom left, var(--gradient-left), transparent 600px );
+body {
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#centered-container {
+    display: grid;
+    width: 55%;
+    padding: 1%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    background: fade-in($color: #121212, $amount: 0.15);
+
+    #about {
+        margin: 1%;
+
+        #picture {
+            float: left;
+            margin-right: 3%;
+            border: 2px solid #d84a54;
+
+            .frame, img {
+                width: 164px;
+                height: 164px;
+                
+            }
+        }
+        
+        .name {
+            color: $heading-Color;
+        }
+        .location {
+            color: $para-Color;
+        }
+        .description {
+            color: $para-Color;
+        }
+
+        .contact-btn {
+            float: right;
+            button {
+                background: rgba($color: #c0c0c0, $alpha: 0.4);
+                color: white;
+                border: none;
+                padding: 7px;
+
+            }
+
+        }
+
+
+    }
+
+    #showcase {
+        margin: 2%;
+        width: 60%;
+
+        .card {
+            svg {
+                filter: invert(42%);
+            }
+
+            a {
+                color: $heading-Color;
+                text-decoration: none;
+            }
+            color: $para-Color;
+            backdrop-filter: blur(20px);
+            background-color: rgba( 0, 0, 0, 0.3 );
+            padding: 0.2%;
+            padding-left: 5%;
+        }
+    }
+
+
+}
+
