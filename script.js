@@ -7,7 +7,7 @@ $(function() {
         $(".location").html(`<p> ${data["location"]} </p>`);
         $(".description").html(`<p> ${data["description"]} </p>`);
         $(".contact-btn").click(function() {
-            window.open(data["contact"])
+            document.location.href = data["contact"]
         });
 
         if (data.hasOwnProperty('Github')) {
