@@ -11,6 +11,16 @@ main {
     justify-content: center;
 }
 
+// remove blank space for mobile devices
+@media only screen and (max-width: 800px) {
+    main {
+        padding: 0;
+    }
+    #centered-container {
+        width: 100% !important;
+    }
+}
+
 #centered-container {
     display: grid;
     width: 55%;
